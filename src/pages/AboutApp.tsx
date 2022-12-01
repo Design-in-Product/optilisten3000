@@ -11,7 +11,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export const AboutPage: FC = () => {
+export const AboutAppPage: FC = () => {
   return (
     <BaseLayout>
       <div>

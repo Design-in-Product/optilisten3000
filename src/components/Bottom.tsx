@@ -4,10 +4,22 @@ import Logo from "../assets/images/logo.png";
 import AppStore from "../assets/images/iosLight.png";
 import LinkedIn from "../assets/images/LinkedInDark.png";
 import Twitter from "../assets/images/TwitterDark.png";
+import { useNavigate } from "react-router-dom";
+import {
+  PATH_ABOUT_APP,
+  PATH_ABOUT_US,
+  PATH_FAQ,
+  PATH_FEEDBACK,
+  PATH_HOW_TO_USE,
+  PATH_PRIVACY,
+  PATH_SETTINGS,
+  PATH_WHO_WE_ARE,
+} from "../routes/paths";
 
 interface Props {}
 
 export const Bottom: FC<Props> = () => {
+  const navigate = useNavigate();
   return (
     <div className="p-8">
       <Grid container justifyContent={"center"}>
@@ -40,33 +52,51 @@ export const Bottom: FC<Props> = () => {
               </div>
             </Grid>
             <Grid item xs={4}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                About
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_ABOUT_US)}
+              >
+                About Us
               </p>
             </Grid>
             <Grid item xs={4}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                Feedback
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_PRIVACY)}
+              >
+                Privacy Policy
               </p>
             </Grid>
             <Grid item xs={4}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                Privacy
-              </p>
-            </Grid>
-            <Grid item xs={4}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_WHO_WE_ARE)}
+              >
                 Who We Are
               </p>
             </Grid>
             <Grid item xs={4}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                FAQs
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_FAQ)}
+              >
+                FAQ
               </p>
             </Grid>
             <Grid item xs={4}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                Terms of Service
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_HOW_TO_USE)}
+              >
+                How to Use
+              </p>
+            </Grid>
+            <Grid item xs={4}>
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_SETTINGS)}
+              >
+                Settings
               </p>
             </Grid>
 
@@ -107,33 +137,51 @@ export const Bottom: FC<Props> = () => {
               </div>
             </Grid>
             <Grid item xs={6}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_ABOUT_APP)}
+              >
                 About
               </p>
             </Grid>
             <Grid item xs={6}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_FEEDBACK)}
+              >
                 Feedback
               </p>
             </Grid>
             <Grid item xs={6}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                Privacy
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_PRIVACY)}
+              >
+                Privacy Policy
               </p>
             </Grid>
             <Grid item xs={6}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_WHO_WE_ARE)}
+              >
                 Who We Are
               </p>
             </Grid>
             <Grid item xs={6}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                FAQs
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_FAQ)}
+              >
+                FAQ
               </p>
             </Grid>
             <Grid item xs={6}>
-              <p className="text-gray-500  font-sfpro-regular text-xl cursor-pointer">
-                Terms of Service
+              <p
+                className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
+                onClick={() => navigate(PATH_SETTINGS)}
+              >
+                Settings
               </p>
             </Grid>
 

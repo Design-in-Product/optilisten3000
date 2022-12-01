@@ -10,33 +10,79 @@ import PolicyIcon from "@mui/icons-material/Policy";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import GavelIcon from "@mui/icons-material/Gavel";
-import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
-import { FC } from "react";
-
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import DataUsageIcon from "@mui/icons-material/DataUsage";
+import AppsIcon from "@mui/icons-material/Apps";
+import { FC, ReactNode } from "react";
 import Logo from "../assets/images/logo.png";
+import { useNavigate } from "react-router-dom";
+import {
+  PATH_ABOUT_APP,
+  PATH_ABOUT_US,
+  PATH_FAQ,
+  PATH_FEEDBACK,
+  PATH_HOW_TO_USE,
+  PATH_PRIVACY,
+  PATH_SETTINGS,
+  PATH_WHO_WE_ARE,
+} from "../routes/paths";
 
-const Icons = [
-  <InfoIcon />,
-  <FeedbackIcon />,
-  <PolicyIcon />,
-  <EmojiPeopleIcon />,
-  <LiveHelpIcon />,
-  <GavelIcon />,
-];
-const Options = [
-  "About",
-  "Feedback",
-  "Privacy",
-  "Who We Are",
-  "FAQs",
-  "Terms of Service",
-];
+interface MenuItemInfo {
+  text: string;
+  icon: ReactNode;
+  onClick: () => void;
+}
 
 interface Props {
   drawerOpened: boolean;
   toggleDrawer: (val: boolean) => void;
 }
 export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
+  const navigate = useNavigate();
+
+  const MenuIcons: MenuItemInfo[] = [
+    {
+      text: "How to Use",
+      icon: <DataUsageIcon />,
+      onClick: () => navigate(PATH_HOW_TO_USE),
+    },
+    {
+      text: "About the App",
+      icon: <AppsIcon />,
+      onClick: () => navigate(PATH_ABOUT_APP),
+    },
+    {
+      text: "Privacy Policy",
+      icon: <PolicyIcon />,
+      onClick: () => navigate(PATH_PRIVACY),
+    },
+    {
+      text: "Who We Are",
+      icon: <PeopleAltIcon />,
+      onClick: () => navigate(PATH_WHO_WE_ARE),
+    },
+    {
+      text: "FAQ",
+      icon: <LiveHelpIcon />,
+      onClick: () => navigate(PATH_FAQ),
+    },
+    {
+      text: "About Us",
+      icon: <InfoIcon />,
+      onClick: () => navigate(PATH_ABOUT_US),
+    },
+    {
+      text: "Feedback",
+      icon: <FeedbackIcon />,
+      onClick: () => navigate(PATH_FEEDBACK),
+    },
+    {
+      text: "Settings",
+      icon: <GavelIcon />,
+      onClick: () => navigate(PATH_SETTINGS),
+    },
+  ];
+
   const Menus = () => {
     return (
       <Box
@@ -49,13 +95,13 @@ export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
           <img src={Logo} alt="Logo" width={67} />
         </div>
         <List>
-          {Options.map((text, index) => (
-            <ListItem key={text} disablePadding>
+          {MenuIcons.map((menuIcon, index) => (
+            <ListItem key={index} disablePadding onClick={menuIcon.onClick}>
               <ListItemButton>
                 <ListItemIcon>
-                  <ListItemIcon>{Icons[index]}</ListItemIcon>
+                  <ListItemIcon>{menuIcon.icon}</ListItemIcon>
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText primary={menuIcon.text} />
               </ListItemButton>
             </ListItem>
           ))}

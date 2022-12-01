@@ -7,7 +7,7 @@ import Logo from "../assets/images/logo.png";
 import AppStore from "../assets/images/ios.png";
 import Hamburger from "../assets/images/hamburger.png";
 import { useNavigate } from "react-router-dom";
-import { PATH_ABOUT, PATH_FEEDBACK, PATH_PRIVACY } from "../routes/paths";
+import { PATH_ABOUT_APP, PATH_FEEDBACK, PATH_PRIVACY } from "../routes/paths";
 
 interface Props {
   toggleDrawer: (show: boolean) => void;
@@ -49,7 +49,7 @@ export const Header: FC<Props> = ({ toggleDrawer }) => {
                 <p
                   className="mr-6 text-xl font-sfpro-bold text-darkBlue underline underline-offset-4 cursor-pointer"
                   onClick={() => {
-                    navigate(PATH_ABOUT);
+                    navigate(PATH_ABOUT_APP);
                   }}
                 >
                   About
