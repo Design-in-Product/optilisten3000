@@ -15,7 +15,11 @@ export const AboutAppPage: FC = () => {
   return (
     <BaseLayout>
       <div>
-        <Grid container justifyContent={"center"} className="bg-darkBlue p-10  h-[400px]">
+        <Grid
+          container
+          justifyContent={"center"}
+          className="bg-darkBlue p-10  h-[400px]"
+        >
           <Grid item md={8} container>
             <Hidden mdDown>
               <Grid item xs={6}>
@@ -80,7 +84,7 @@ export const AboutAppPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="p-10 mt-10">
+        <Grid container justifyContent={"center"} className="p-10 mt-10 z-20 relative">
           <Grid item md={8} container>
             <p className="text-darkBlue font-sfpro-bold text-3xl pb-6">
               Who We Are
@@ -96,7 +100,7 @@ export const AboutAppPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="p-10">
+        <Grid container justifyContent={"center"} className="p-10 z-20 relative">
           <Grid item md={8} container>
             <p className="text-darkBlue font-sfpro-bold text-3xl pb-6">
               Questions you may have

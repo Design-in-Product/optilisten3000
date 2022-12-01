@@ -81,7 +81,7 @@ export const FeedbackPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="p-10 mt-10">
+        <Grid container justifyContent={"center"} className="p-10 mt-10 z-20 relative">
           <Grid item md={8} container>
             <div className="w-full">
               <p className="text-darkBlue font-sfpro-bold text-3xl pb-10">
@@ -115,7 +115,7 @@ export const FeedbackPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="pb-10 pl-10 mt-4">
+        <Grid container justifyContent={"center"} className="pb-10 pl-10 mt-4 z-20 relative">
           <Grid item md={8} container>
             <FormControl>
               <FormLabel id="demo-radio-buttons-group-label" className="mb-2">
@@ -129,7 +129,7 @@ export const FeedbackPage: FC = () => {
                 <FormControlLabel
                   value="loveIt"
                   control={<Radio />}
-                  label="Lovve It!"
+                  label="Love It!"
                 />
                 <FormControlLabel
                   value="bugReport"
