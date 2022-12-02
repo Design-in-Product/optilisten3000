@@ -4,26 +4,22 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InfoIcon from "@mui/icons-material/Info";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import PolicyIcon from "@mui/icons-material/Policy";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import GavelIcon from "@mui/icons-material/Gavel";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
-import DataUsageIcon from "@mui/icons-material/DataUsage";
 import AppsIcon from "@mui/icons-material/Apps";
 import { FC, ReactNode } from "react";
 import Logo from "../assets/images/logo.png";
 import { useNavigate } from "react-router-dom";
 import {
   PATH_ABOUT_APP,
-  PATH_ABOUT_US,
   PATH_FAQ,
   PATH_FEEDBACK,
-  PATH_HOW_TO_USE,
   PATH_PRIVACY,
-  PATH_SETTINGS,
+  PATH_TERMS_OF_SERVICE,
   PATH_WHO_WE_ARE,
 } from "../routes/paths";
 
@@ -42,20 +38,21 @@ export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
 
   const MenuIcons: MenuItemInfo[] = [
     {
-      text: "How to Use",
-      icon: <DataUsageIcon />,
-      onClick: () => navigate(PATH_HOW_TO_USE),
-    },
-    {
-      text: "About the App",
+      text: "About",
       icon: <AppsIcon />,
       onClick: () => navigate(PATH_ABOUT_APP),
     },
     {
-      text: "Privacy Policy",
+      text: "Feedback",
+      icon: <FeedbackIcon />,
+      onClick: () => navigate(PATH_FEEDBACK),
+    },
+    {
+      text: "Privacy",
       icon: <PolicyIcon />,
       onClick: () => navigate(PATH_PRIVACY),
     },
+
     {
       text: "Who We Are",
       icon: <PeopleAltIcon />,
@@ -67,19 +64,9 @@ export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
       onClick: () => navigate(PATH_FAQ),
     },
     {
-      text: "About Us",
-      icon: <InfoIcon />,
-      onClick: () => navigate(PATH_ABOUT_US),
-    },
-    {
-      text: "Feedback",
-      icon: <FeedbackIcon />,
-      onClick: () => navigate(PATH_FEEDBACK),
-    },
-    {
-      text: "Settings",
+      text: "Terms Of Service",
       icon: <GavelIcon />,
-      onClick: () => navigate(PATH_SETTINGS),
+      onClick: () => navigate(PATH_TERMS_OF_SERVICE),
     },
   ];
 

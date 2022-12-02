@@ -8,3 +8,4 @@ export const PATH_FAQ = "/faq";
 export const PATH_ABOUT_US = "/about-us";
 export const PATH_FEEDBACK = "/feedback";
 export const PATH_SETTINGS = "/settings";
+export const PATH_TERMS_OF_SERVICE = "/terms-of-service";
