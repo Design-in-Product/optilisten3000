@@ -14,7 +14,11 @@ import AppsIcon from "@mui/icons-material/Apps";
 import { FC, ReactNode } from "react";
 import Logo from "../assets/images/logo.png";
 import { useNavigate } from "react-router-dom";
-import { PATH_ABOUT_APP, PATH_FEEDBACK, PATH_PRIVACY } from "../routes/paths";
+import {
+  PATH_ABOUT_APP_PREFIX,
+  PATH_FEEDBACK,
+  PATH_PRIVACY_PREFIX,
+} from "../routes/paths";
 
 interface MenuItemInfo {
   text: string;
@@ -33,7 +37,7 @@ export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
     {
       text: "About",
       icon: <AppsIcon />,
-      onClick: () => navigate(PATH_ABOUT_APP),
+      onClick: () => navigate(`${PATH_ABOUT_APP_PREFIX}/about`),
     },
     {
       text: "Feedback",
@@ -43,23 +47,23 @@ export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
     {
       text: "Privacy",
       icon: <PolicyIcon />,
-      onClick: () => navigate(PATH_PRIVACY),
+      onClick: () => navigate(`${PATH_PRIVACY_PREFIX}/privacy`),
     },
 
     {
       text: "Who We Are",
       icon: <PeopleAltIcon />,
-      onClick: () => navigate(PATH_ABOUT_APP),
+      onClick: () => navigate(`${PATH_ABOUT_APP_PREFIX}/who`),
     },
     {
       text: "FAQ",
       icon: <LiveHelpIcon />,
-      onClick: () => navigate(PATH_ABOUT_APP),
+      onClick: () => navigate(`${PATH_ABOUT_APP_PREFIX}/faq`),
     },
     {
       text: "Terms Of Service",
       icon: <GavelIcon />,
-      onClick: () => navigate(PATH_PRIVACY),
+      onClick: () => navigate(`${PATH_PRIVACY_PREFIX}/terms`),
     },
   ];
 

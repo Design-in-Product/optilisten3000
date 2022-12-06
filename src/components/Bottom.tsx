@@ -6,10 +6,10 @@ import LinkedIn from "../assets/images/LinkedInDark.png";
 import Facebook from "../assets/images/facebook.png";
 import { useNavigate } from "react-router-dom";
 import {
-  PATH_ABOUT_APP,
+  PATH_ABOUT_APP_PREFIX,
   PATH_ABOUT_US,
   PATH_FEEDBACK,
-  PATH_PRIVACY,
+  PATH_PRIVACY_PREFIX,
   PATH_SETTINGS,
 } from "../routes/paths";
 
@@ -68,7 +68,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_PRIVACY)}
+                onClick={() => navigate(`${PATH_PRIVACY_PREFIX}/privacy`)}
               >
                 Privacy Policy
               </p>
@@ -76,15 +76,15 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => {}}
+                onClick={() => navigate(PATH_FEEDBACK)}
               >
-                Who We Are
+                Feedback
               </p>
             </Grid>
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => {}}
+                onClick={() => navigate(`${PATH_ABOUT_APP_PREFIX}/faq`)}
               >
                 FAQ
               </p>
@@ -92,9 +92,9 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => {}}
+                onClick={() => navigate(`${PATH_ABOUT_APP_PREFIX}/who`)}
               >
-                How to Use
+                Who We Are
               </p>
             </Grid>
             <Grid item xs={4}>
@@ -154,7 +154,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={6}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_ABOUT_APP)}
+                onClick={() => navigate(`${PATH_ABOUT_APP_PREFIX}/about`)}
               >
                 About
               </p>
@@ -170,7 +170,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={6}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_PRIVACY)}
+                onClick={() => navigate(`${PATH_PRIVACY_PREFIX}/privacy`)}
               >
                 Privacy Policy
               </p>
@@ -178,7 +178,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={6}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => {}}
+                onClick={() => navigate(`${PATH_ABOUT_APP_PREFIX}/who`)}
               >
                 Who We Are
               </p>
@@ -186,7 +186,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={6}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => {}}
+                onClick={() => navigate(`${PATH_ABOUT_APP_PREFIX}/faq`)}
               >
                 FAQ
               </p>
