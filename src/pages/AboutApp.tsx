@@ -110,29 +110,9 @@ export const AboutAppPage: FC = () => {
       <Grid container justifyContent={"center"} className="p-10 z-20 relative">
         <Grid item md={8} container>
           <p className="text-darkBlue font-sfpro-bold text-3xl pb-6">
-            Questions you may have
+            Here are the answers to the last three questions:
           </p>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <p className="text-black font-sfpro-regular text-xl">
-                Why did you all make this app?
-              </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                We were working on our own listening skills, and realized that
-                talk talk was going to break our spirits, so we created a
-                hands-free app that could let us focus less on the buttons and
-                more on trying to be a little more present for the people on our
-                audio and video calls.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
+          <Accordion sx={{ width: "100%" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -144,15 +124,12 @@ export const AboutAppPage: FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                We were working on our own listening skills, and realized that
-                talk talk was going to break our spirits, so we created a
-                hands-free app that could let us focus less on the buttons and
-                more on trying to be a little more present for the people on our
-                audio and video calls.
+                Yes -- that way the app hears that you are talking but not the
+                other folks on the call.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion sx={{ width: "100%" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -164,31 +141,25 @@ export const AboutAppPage: FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                We were working on our own listening skills, and realized that
-                talk talk was going to break our spirits, so we created a
-                hands-free app that could let us focus less on the buttons and
-                more on trying to be a little more present for the people on our
-                audio and video calls.
+                It doesn't -- no login, no data. All data is kept on your phone.
+                folks on the call.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion sx={{ width: "100%" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <p className="text-black font-sfpro-regular text-xl">
-                Are you all better listeners now?
+                Are you all better listeners now?{" "}
               </p>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                We were working on our own listening skills, and realized that
-                talk talk was going to break our spirits, so we created a
-                hands-free app that could let us focus less on the buttons and
-                more on trying to be a little more present for the people on our
-                audio and video calls.
+                Better, hopefully. But it's a journey! :-) Be, hear, now, good
+                people!
               </Typography>
             </AccordionDetails>
           </Accordion>
