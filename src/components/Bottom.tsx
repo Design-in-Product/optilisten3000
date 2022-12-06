@@ -8,12 +8,9 @@ import { useNavigate } from "react-router-dom";
 import {
   PATH_ABOUT_APP,
   PATH_ABOUT_US,
-  PATH_FAQ,
   PATH_FEEDBACK,
-  PATH_HOW_TO_USE,
   PATH_PRIVACY,
   PATH_SETTINGS,
-  PATH_WHO_WE_ARE,
 } from "../routes/paths";
 
 interface Props {}
@@ -79,7 +76,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_WHO_WE_ARE)}
+                onClick={() => {}}
               >
                 Who We Are
               </p>
@@ -87,7 +84,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_FAQ)}
+                onClick={() => {}}
               >
                 FAQ
               </p>
@@ -95,7 +92,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_HOW_TO_USE)}
+                onClick={() => {}}
               >
                 How to Use
               </p>
@@ -181,7 +178,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={6}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_WHO_WE_ARE)}
+                onClick={() => {}}
               >
                 Who We Are
               </p>
@@ -189,7 +186,7 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={6}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_FAQ)}
+                onClick={() => {}}
               >
                 FAQ
               </p>

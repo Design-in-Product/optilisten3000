@@ -14,14 +14,7 @@ import AppsIcon from "@mui/icons-material/Apps";
 import { FC, ReactNode } from "react";
 import Logo from "../assets/images/logo.png";
 import { useNavigate } from "react-router-dom";
-import {
-  PATH_ABOUT_APP,
-  PATH_FAQ,
-  PATH_FEEDBACK,
-  PATH_PRIVACY,
-  PATH_TERMS_OF_SERVICE,
-  PATH_WHO_WE_ARE,
-} from "../routes/paths";
+import { PATH_ABOUT_APP, PATH_FEEDBACK, PATH_PRIVACY } from "../routes/paths";
 
 interface MenuItemInfo {
   text: string;
@@ -56,17 +49,17 @@ export const Drawer: FC<Props> = ({ drawerOpened, toggleDrawer }) => {
     {
       text: "Who We Are",
       icon: <PeopleAltIcon />,
-      onClick: () => navigate(PATH_WHO_WE_ARE),
+      onClick: () => navigate(PATH_ABOUT_APP),
     },
     {
       text: "FAQ",
       icon: <LiveHelpIcon />,
-      onClick: () => navigate(PATH_FAQ),
+      onClick: () => navigate(PATH_ABOUT_APP),
     },
     {
       text: "Terms Of Service",
       icon: <GavelIcon />,
-      onClick: () => navigate(PATH_TERMS_OF_SERVICE),
+      onClick: () => navigate(PATH_PRIVACY),
     },
   ];
 
