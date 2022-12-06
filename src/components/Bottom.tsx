@@ -7,7 +7,6 @@ import Facebook from "../assets/images/facebook.png";
 import { useNavigate } from "react-router-dom";
 import {
   PATH_ABOUT_APP_PREFIX,
-  PATH_ABOUT_US,
   PATH_FEEDBACK,
   PATH_PRIVACY_PREFIX,
   PATH_SETTINGS,
@@ -60,9 +59,9 @@ export const Bottom: FC<Props> = () => {
             <Grid item xs={4}>
               <p
                 className="text-gray-500  font-sfpro-regular text-xl cursor-pointer"
-                onClick={() => navigate(PATH_ABOUT_US)}
+                onClick={() => navigate(`${PATH_ABOUT_APP_PREFIX}/about`)}
               >
-                About Us
+                About
               </p>
             </Grid>
             <Grid item xs={4}>
