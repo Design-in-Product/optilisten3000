@@ -140,8 +140,28 @@ export const AboutAppPage: FC = () => {
             className="text-darkBlue font-sfpro-bold text-3xl pb-6"
             ref={faqRef}
           >
-            Here are the answers to the last three questions:
+            Questions you may have
           </p>
+          <Accordion sx={{ width: "100%" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <p className="text-black font-sfpro-regular text-xl">
+                Why did you all make this app?
+              </p>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                We were working on our own listening skills, and realized that
+                talk talk was going to break our spirits, so we created a
+                hands-free app that could let us focus less on the buttons and
+                more on trying to be a little more present for the people on our
+                audio and video calls.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
           <Accordion sx={{ width: "100%" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
