@@ -7,7 +7,11 @@ import Logo from "../assets/images/logo.png";
 import AppStore from "../assets/images/ios.png";
 import Hamburger from "../assets/images/hamburger.png";
 import { useNavigate } from "react-router-dom";
-import { PATH_ABOUT_APP, PATH_FEEDBACK, PATH_PRIVACY } from "../routes/paths";
+import {
+  PATH_ABOUT_APP_PREFIX,
+  PATH_FEEDBACK,
+  PATH_PRIVACY_PREFIX,
+} from "../routes/paths";
 
 interface Props {
   toggleDrawer: (show: boolean) => void;
@@ -49,7 +53,7 @@ export const Header: FC<Props> = ({ toggleDrawer }) => {
                 <p
                   className="mr-6 text-xl font-sfpro-bold text-darkBlue underline underline-offset-4 cursor-pointer"
                   onClick={() => {
-                    navigate(PATH_ABOUT_APP);
+                    navigate(`${PATH_ABOUT_APP_PREFIX}/about`);
                   }}
                 >
                   About
@@ -65,7 +69,7 @@ export const Header: FC<Props> = ({ toggleDrawer }) => {
                 <p
                   className="text-xl mr-6 font-sfpro-bold text-darkBlue underline underline-offset-4 cursor-pointer"
                   onClick={() => {
-                    navigate(PATH_PRIVACY);
+                    navigate(`${PATH_PRIVACY_PREFIX}/privacy`);
                   }}
                 >
                   Privacy

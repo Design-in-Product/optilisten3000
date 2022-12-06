@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import { BaseLayout } from "./BaseLayout";
 
 import Fireworks from "../assets/images/Fireworks.png";
@@ -10,8 +10,26 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useParams } from "react-router-dom";
 
 export const AboutAppPage: FC = () => {
+  const aboutRef = useRef(null);
+  const faqRef = useRef(null);
+  const whoRef = useRef(null);
+
+  const params = useParams();
+
+  useEffect(() => {
+    if (!params || !params.section) return;
+    if (params.section === "about" && aboutRef.current != null) {
+      (aboutRef!.current as any).scrollIntoView();
+    } else if (params.section === "who" && whoRef.current != null) {
+      (whoRef?.current as any).scrollIntoView();
+    } else if (params.section === "faq" && faqRef.current != null) {
+      (faqRef?.current as any).scrollIntoView();
+    }
+  }, [params]);
+
   return (
     <BaseLayout>
       <Grid
@@ -22,7 +40,10 @@ export const AboutAppPage: FC = () => {
         <Grid item md={8} container>
           <Hidden mdDown>
             <Grid item xs={6}>
-              <p className="text-white font-sfpro-bold text-3xl pb-6">
+              <p
+                className="text-white font-sfpro-bold text-3xl pb-6"
+                ref={aboutRef}
+              >
                 About OptiListen
               </p>
               <p className="text-white font-sfpro-regular text-xl">
@@ -52,7 +73,10 @@ export const AboutAppPage: FC = () => {
                   <img src={Fireworks} alt="fireworks" className="w-3/4 z-10" />
                 </div>
                 <div className="z-20 relative">
-                  <p className="text-white font-sfpro-bold text-3xl pb-6">
+                  <p
+                    className="text-white font-sfpro-bold text-3xl pb-6"
+                    ref={aboutRef}
+                  >
                     About OptiListen
                   </p>
                   <p className="text-white font-sfpro-regular text-xl">
@@ -93,7 +117,10 @@ export const AboutAppPage: FC = () => {
         className="p-10 mt-10 z-20 relative"
       >
         <Grid item md={8} container>
-          <p className="text-darkBlue font-sfpro-bold text-3xl pb-6">
+          <p
+            className="text-darkBlue font-sfpro-bold text-3xl pb-6"
+            ref={whoRef}
+          >
             Who We Are
           </p>
           <p className="text-black font-sfpro-regular text-xl pb-6">
@@ -109,7 +136,10 @@ export const AboutAppPage: FC = () => {
 
       <Grid container justifyContent={"center"} className="p-10 z-20 relative">
         <Grid item md={8} container>
-          <p className="text-darkBlue font-sfpro-bold text-3xl pb-6">
+          <p
+            className="text-darkBlue font-sfpro-bold text-3xl pb-6"
+            ref={faqRef}
+          >
             Here are the answers to the last three questions:
           </p>
           <Accordion sx={{ width: "100%" }}>

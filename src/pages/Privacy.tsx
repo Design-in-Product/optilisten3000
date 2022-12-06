@@ -1,13 +1,29 @@
 import { Grid } from "@mui/material";
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
+import { useParams } from "react-router-dom";
 import { BaseLayout } from "./BaseLayout";
 
 export const PrivacyPage: FC = () => {
+  const privacyRef = useRef(null);
+  const termsRef = useRef(null);
+
+  const params = useParams();
+
+  useEffect(() => {
+    if (!params || !params.section) return;
+    if (params.section === "privacy" && privacyRef.current != null) {
+      (privacyRef!.current as any).scrollIntoView();
+    } else if (params.section === "terms" && termsRef.current != null) {
+      (termsRef!.current as any).scrollIntoView();
+    }
+  }, [params]);
   return (
     <BaseLayout>
       <Grid container justifyContent={"center"} className="p-10">
         <Grid item md={8} container>
-          <p className="text-3xl font-sfpro-bold pb-6">Privacy Policy</p>
+          <p className="text-3xl font-sfpro-bold pb-6" ref={privacyRef}>
+            Privacy Policy
+          </p>
           <p className="text-xl font-sfpro-medium pb-6">
             Your privacy is important to us. It is Long Sky Media's policy to
             respect your privacy and comply with any applicable law and
@@ -232,13 +248,15 @@ export const PrivacyPage: FC = () => {
             contact us using the following details: OptiListen Support
           </p>
           <a
-            className="text-xl font-sfpro-medium pb-6 text-blue-500 underline"
+            className="text-xl font-sfpro-medium pb-6 text-blue-500 underline w-full"
             href="mailto:optilisten@longskymedia.com"
           >
             optilisten@longskymedia.com
           </a>
 
-          <p className="text-3xl font-sfpro-bold pb-6">Terms and Conditions</p>
+          <p className="text-3xl font-sfpro-bold pb-6" ref={termsRef}>
+            Terms and Conditions
+          </p>
           <p className="text-2xl font-sfpro-bold pb-6">
             Agreement between User and Long Sky Media
           </p>
@@ -471,7 +489,7 @@ export const PrivacyPage: FC = () => {
           </p>
           <p className="text-xl font-sfpro-medium">Email Address:</p>
           <a
-            className="text-xl font-sfpro-medium pb-6 text-blue-500 underline"
+            className="text-xl font-sfpro-medium pb-6 text-blue-500 underline w-full"
             href="mailto:optilisten@longskymedia.com"
           >
             optilisten@longskymedia.com
