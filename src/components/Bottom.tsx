@@ -3,7 +3,7 @@ import { FC } from "react";
 import Logo from "../assets/images/logo.png";
 import AppStore from "../assets/images/iosLight.png";
 import LinkedIn from "../assets/images/LinkedInDark.png";
-import Twitter from "../assets/images/TwitterDark.png";
+import Facebook from "../assets/images/facebook.png";
 import { useNavigate } from "react-router-dom";
 import {
   PATH_ABOUT_APP,
@@ -42,13 +42,22 @@ export const Bottom: FC<Props> = () => {
                 />
               </div>
               <div className="flex mt-4">
-                <img
-                  src={Twitter}
-                  alt="twitter"
-                  width={40}
-                  className="mr-4 fill-darkBlue"
-                />
-                <img src={LinkedIn} alt="twitter" width={40} />
+                <a href="https://www.facebook.com/longskymedia/">
+                  <img
+                    src={Facebook}
+                    alt="facebook"
+                    width={40}
+                    className="mr-4 fill-darkBlue cursor-pointer"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/company/long-sky-media/about/">
+                  <img
+                    src={LinkedIn}
+                    alt="Linkedin"
+                    width={40}
+                    className="cursor-pointer"
+                  />
+                </a>
               </div>
             </Grid>
             <Grid item xs={4}>
@@ -127,13 +136,22 @@ export const Bottom: FC<Props> = () => {
                 />
               </div>
               <div className="flex mt-4">
-                <img
-                  src={Twitter}
-                  alt="twitter"
-                  width={40}
-                  className="mr-4 fill-darkBlue"
-                />
-                <img src={LinkedIn} alt="twitter" width={40} />
+                <a href="https://www.facebook.com/longskymedia/">
+                  <img
+                    src={Facebook}
+                    alt="Facebook"
+                    width={40}
+                    className="mr-4 fill-darkBlue cursor-pointer"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/company/long-sky-media/about/">
+                  <img
+                    src={LinkedIn}
+                    alt="Linkedin"
+                    width={40}
+                    className="cursor-pointer"
+                  />
+                </a>
               </div>
             </Grid>
             <Grid item xs={6}>

@@ -3,7 +3,7 @@ import { BaseLayout } from "./BaseLayout";
 
 import Fireworks from "../assets/images/Fireworks.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
-import Twitter from "../assets/images/Twitter.png";
+import Facebook from "../assets/images/facebook.png";
 import { Grid, Hidden } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -31,8 +31,17 @@ export const AboutAppPage: FC = () => {
                 calls. Unlock the listener within.{" "}
               </p>
               <div className="flex mt-4">
-                <img src={Twitter} alt="twitter" width={40} className="mr-4" />
-                <img src={LinkedIn} alt="twitter" width={40} />
+                <a href="https://www.facebook.com/longskymedia/">
+                  <img
+                    src={Facebook}
+                    alt="Facebook"
+                    width={40}
+                    className="mr-4"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/company/long-sky-media/about/">
+                  <img src={LinkedIn} alt="Linkedin" width={40} />
+                </a>
               </div>
             </Grid>
           </Hidden>
@@ -52,13 +61,17 @@ export const AboutAppPage: FC = () => {
                     audio calls. Unlock the listener within.{" "}
                   </p>
                   <div className="flex mt-4">
-                    <img
-                      src={Twitter}
-                      alt="twitter"
-                      width={40}
-                      className="mr-4"
-                    />
-                    <img src={LinkedIn} alt="twitter" width={40} />
+                    <a href="https://www.facebook.com/longskymedia/">
+                      <img
+                        src={Facebook}
+                        alt="Facebook"
+                        width={40}
+                        className="mr-4"
+                      />
+                    </a>
+                    <a href="https://www.linkedin.com/company/long-sky-media/about/">
+                      <img src={LinkedIn} alt="LinkedIn" width={40} />
+                    </a>
                   </div>
                 </div>
               </div>

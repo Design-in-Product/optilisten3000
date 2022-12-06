@@ -13,7 +13,7 @@ import FormLabel from "@mui/material/FormLabel";
 
 import Fireworks from "../assets/images/HappyFireworks.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
-import Twitter from "../assets/images/Twitter.png";
+import Facebook from "../assets/images/facebook.png";
 import { Button, Grid, Hidden, TextField } from "@mui/material";
 import { Stack } from "@mui/system";
 
@@ -24,7 +24,11 @@ export const FeedbackPage: FC = () => {
   return (
     <BaseLayout>
       <div>
-        <Grid container justifyContent={"center"} className="bg-darkBlue p-10 h-[420px]">
+        <Grid
+          container
+          justifyContent={"center"}
+          className="bg-darkBlue p-10 h-[420px]"
+        >
           <Grid item md={8} container>
             <Hidden mdDown>
               <Grid item xs={6}>
@@ -59,13 +63,22 @@ export const FeedbackPage: FC = () => {
                       audio calls. Unlock the listener within.{" "}
                     </p>
                     <div className="flex mt-4">
-                      <img
-                        src={Twitter}
-                        alt="twitter"
-                        width={40}
-                        className="mr-4"
-                      />
-                      <img src={LinkedIn} alt="twitter" width={40} />
+                      <a href="https://www.facebook.com/longskymedia/">
+                        <img
+                          src={Facebook}
+                          alt="Facebook"
+                          width={40}
+                          className="mr-4 cursor-pointer"
+                        />
+                      </a>
+                      <a href="https://www.linkedin.com/company/long-sky-media/about/">
+                        <img
+                          src={LinkedIn}
+                          alt="Linkedin"
+                          width={40}
+                          className="cursor-pointer"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -81,7 +94,11 @@ export const FeedbackPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="p-10 mt-10 z-20 relative">
+        <Grid
+          container
+          justifyContent={"center"}
+          className="p-10 mt-10 z-20 relative"
+        >
           <Grid item md={8} container>
             <div className="w-full">
               <p className="text-darkBlue font-sfpro-bold text-3xl pb-10">
@@ -115,7 +132,11 @@ export const FeedbackPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="pb-10 pl-10 mt-4 z-20 relative">
+        <Grid
+          container
+          justifyContent={"center"}
+          className="pb-10 pl-10 mt-4 z-20 relative"
+        >
           <Grid item md={8} container>
             <FormControl>
               <FormLabel id="demo-radio-buttons-group-label" className="mb-2">
