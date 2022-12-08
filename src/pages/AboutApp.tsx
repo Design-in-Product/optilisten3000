@@ -192,7 +192,6 @@ export const AboutAppPage: FC = () => {
             <AccordionDetails>
               <Typography>
                 It doesn't -- no login, no data. All data is kept on your phone.
-                folks on the call.
               </Typography>
             </AccordionDetails>
           </Accordion>
