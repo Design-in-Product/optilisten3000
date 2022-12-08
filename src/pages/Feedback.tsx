@@ -102,7 +102,7 @@ export const FeedbackPage: FC = () => {
           <Grid item md={8} container>
             <div className="w-full">
               <p className="text-darkBlue font-sfpro-bold text-3xl pb-10">
-                Feedback From
+                Feedback Form
               </p>
               <FormControl variant="outlined" fullWidth>
                 <InputLabel htmlFor="outlined-adornment-password">
