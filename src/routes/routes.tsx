@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AboutAppPage } from "../pages/AboutApp";
+import { DashboardPage } from "../pages/Dashboard";
 import { FeedbackPage } from "../pages/Feedback";
 import { NotFoundPage } from "../pages/NotFound";
 import { PrivacyPage } from "../pages/Privacy";
@@ -17,7 +18,7 @@ import {
 export const AppRoutes: FC = () => {
   return (
     <Routes>
-      <Route path={PATH_ROOT} element={<AboutAppPage />} />
+      <Route path={PATH_ROOT} element={<DashboardPage />} />
       <Route path={PATH_ABOUT_APP} element={<AboutAppPage />} />
       <Route path={PATH_PRIVACY} element={<PrivacyPage />} />
       <Route path={PATH_FEEDBACK} element={<FeedbackPage />} />
