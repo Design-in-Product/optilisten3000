@@ -6,11 +6,12 @@ import { FC } from "react";
 import Logo from "../assets/images/logo.png";
 import AppStore from "../assets/images/ios.png";
 import Hamburger from "../assets/images/hamburger.png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   PATH_ABOUT_APP_PREFIX,
   PATH_FEEDBACK,
   PATH_PRIVACY_PREFIX,
+  PATH_ROOT,
 } from "../routes/paths";
 
 interface Props {
@@ -19,9 +20,10 @@ interface Props {
 
 export const Header: FC<Props> = ({ toggleDrawer }) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
-    <div className="px-20 py-8 relative">
+    <div className="px-20 py-8 relative shadow-lg bg-[#F8F8F8]">
       <Grid container>
         <Hidden mdUp>
           <Grid item xs={12} sm={12}>
@@ -43,15 +45,22 @@ export const Header: FC<Props> = ({ toggleDrawer }) => {
         <Hidden mdDown>
           <Grid item md={12} lg={12}>
             <div className="flex justify-between items-center">
-              <div className="flex items-center">
+              <div
+                className="flex items-center cursor-pointer"
+                onClick={() => navigate(PATH_ROOT)}
+              >
                 <img src={Logo} alt="Logo" width={67} />
-                <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl">
+                <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl tracking-widest">
                   OptiListen
                 </h1>
               </div>
               <div className="flex items-center">
                 <p
-                  className="mr-6 text-xl font-sfpro-bold text-darkBlue underline underline-offset-4 cursor-pointer"
+                  className={`mr-6 text-xl font-sfpro-regular text-darkBlue ${
+                    location.pathname.includes(PATH_ABOUT_APP_PREFIX)
+                      ? "underline font-bold"
+                      : ""
+                  } underline-offset-4 cursor-pointer`}
                   onClick={() => {
                     navigate(`${PATH_ABOUT_APP_PREFIX}/about`);
                   }}
@@ -59,7 +68,11 @@ export const Header: FC<Props> = ({ toggleDrawer }) => {
                   About
                 </p>
                 <p
-                  className="mr-6 text-xl font-sfpro-bold text-darkBlue underline underline-offset-4 cursor-pointer"
+                  className={`mr-6 text-xl font-sfpro-regular text-darkBlue ${
+                    location.pathname.includes(PATH_FEEDBACK)
+                      ? "underline font-bold"
+                      : ""
+                  } underline-offset-4 cursor-pointer`}
                   onClick={() => {
                     navigate(PATH_FEEDBACK);
                   }}
@@ -67,12 +80,16 @@ export const Header: FC<Props> = ({ toggleDrawer }) => {
                   Feedback
                 </p>
                 <p
-                  className="text-xl mr-6 font-sfpro-bold text-darkBlue underline underline-offset-4 cursor-pointer"
+                  className={`mr-6 text-xl font-sfpro-regular text-darkBlue ${
+                    location.pathname.includes(PATH_PRIVACY_PREFIX)
+                      ? "underline font-bold"
+                      : ""
+                  } underline-offset-4 cursor-pointer`}
                   onClick={() => {
                     navigate(`${PATH_PRIVACY_PREFIX}/privacy`);
                   }}
                 >
-                  Privacy
+                  Legal
                 </p>
                 <img
                   src={AppStore}

@@ -25,7 +25,7 @@ export const Bottom: FC<Props> = () => {
               <div className="border-b-2">
                 <div className="flex items-center mb-5">
                   <img src={Logo} alt="Logo" width={67} />
-                  <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl">
+                  <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl tracking-widest">
                     OptiListen
                   </h1>
                 </div>
@@ -119,7 +119,7 @@ export const Bottom: FC<Props> = () => {
               <div className="border-b-2">
                 <div className="flex items-center mb-5">
                   <img src={Logo} alt="Logo" width={67} />
-                  <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl">
+                  <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl tracking-widest">
                     OptiListen
                   </h1>
                 </div>
