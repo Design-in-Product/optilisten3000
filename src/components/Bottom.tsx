@@ -107,7 +107,7 @@ export const Bottom: FC<Props> = () => {
 
             <Grid item xs={12}>
               <p className="text-gray-300  font-sfpro-regular text-md">
-                © Legal Jargon, Copyright © 2022 Long Sky Media. All rights
+                © Copyright © 2022 Long Sky Media. All rights
                 reserved.
               </p>
             </Grid>
@@ -201,7 +201,7 @@ export const Bottom: FC<Props> = () => {
 
             <Grid item xs={12}>
               <p className="text-gray-300  font-sfpro-regular text-md">
-                © Legal Jargon, Copyright © 2022 Long Sky Media. All rights
+                © Copyright © 2022 Long Sky Media. All rights
                 reserved.
               </p>
             </Grid>
