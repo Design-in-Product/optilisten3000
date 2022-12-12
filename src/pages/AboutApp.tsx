@@ -150,7 +150,7 @@ export const AboutAppPage: FC = () => {
           >
             Questions you may have
           </p>
-          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
               <p className="text-midNight font-sfpro-medium text-xl">
                 Why did you all make this app?
@@ -164,6 +164,7 @@ export const AboutAppPage: FC = () => {
                   newVal[0] = !menuOpen[0];
                   setMenuOpen(newVal);
                 }}
+                className="cursor-pointer"
               />
             </div>
             {menuOpen[0] && (
@@ -176,7 +177,7 @@ export const AboutAppPage: FC = () => {
               </p>
             )}
           </div>
-          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
               <p className="text-midNight font-sfpro-medium text-xl">
                 Do I need to wear headphones for the app to work?
@@ -190,6 +191,7 @@ export const AboutAppPage: FC = () => {
                   newVal[1] = !menuOpen[1];
                   setMenuOpen(newVal);
                 }}
+                className="cursor-pointer"
               />
             </div>
             {menuOpen[1] && (
@@ -199,7 +201,7 @@ export const AboutAppPage: FC = () => {
               </p>
             )}
           </div>
-          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
               <p className="text-midNight font-sfpro-medium text-xl">
                 Does the app collect any personal data?
@@ -213,6 +215,7 @@ export const AboutAppPage: FC = () => {
                   newVal[2] = !menuOpen[2];
                   setMenuOpen(newVal);
                 }}
+                className="cursor-pointer"
               />
             </div>
             {menuOpen[2] && (
@@ -221,7 +224,7 @@ export const AboutAppPage: FC = () => {
               </p>
             )}
           </div>
-          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
               <p className="text-midNight font-sfpro-medium text-xl">
                 Are you all better listeners now?
@@ -235,6 +238,7 @@ export const AboutAppPage: FC = () => {
                   newVal[3] = !menuOpen[3];
                   setMenuOpen(newVal);
                 }}
+                className="cursor-pointer"
               />
             </div>
             {menuOpen[3] && (
