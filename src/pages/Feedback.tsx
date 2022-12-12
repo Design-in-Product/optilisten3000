@@ -188,7 +188,7 @@ export const FeedbackPage: FC = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="pb-10 px-10">
+        <Grid container justifyContent={"center"} className="pb-10 px-10  z-20 relative">
           <Grid item md={8} container>
             <div className="w-full">
               <TextField
@@ -204,7 +204,7 @@ export const FeedbackPage: FC = () => {
             </div>
           </Grid>
         </Grid>
-        <Grid container justifyContent={"center"} className="p-10 pb-20 pt-0">
+        <Grid container justifyContent={"center"} className="p-10 pb-20 pt-0  z-20 relative">
           <Grid item md={8} container>
             <div className="flex flex-nowrap w-full">
               <Button
