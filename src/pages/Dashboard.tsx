@@ -57,17 +57,17 @@ export const DashboardPage: FC = () => {
       <Grid container justifyContent={"center"} className="p-10">
         <Grid item md={8} container>
           <Grid xs={12} item>
-            <p className="text-black font-sfpro-regular text-xl mt-24 pt-14">
+            <p className="text-midNight font-sfpro-regular text-xl mt-24 pt-14">
               OptiListen is an easy to use app, created by and for folks who
               would like to listen a little more.
             </p>
-            <p className="text-black font-sfpro-regular text-xl mt-4">
+            <p className="text-midNight font-sfpro-regular text-xl mt-4">
               Put your headphones on, start a session, set a goal, and see how
               you do. With OptiListen, you can track your results over time, and
               build your listening skills, one audio or video call at a time.
             </p>
 
-            <p className="text-black font-sfpro-regular text-xl mt-4 pb-12">
+            <p className="text-midNight font-sfpro-regular text-xl mt-4 pb-12">
               Note: We're launching OptiListen as a free app and all data is
               kept locally on your phone.
             </p>

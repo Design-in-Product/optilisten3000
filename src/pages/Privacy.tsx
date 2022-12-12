@@ -21,10 +21,10 @@ export const PrivacyPage: FC = () => {
     <BaseLayout>
       <Grid container justifyContent={"center"} className="p-10">
         <Grid item md={8} container>
-          <p className="text-3xl font-sfpro-bold pb-6" ref={privacyRef}>
-            Privacy Policy
+          <p className="text-3xl font-sfpro-bold pb-6 text-darkBlue" ref={privacyRef}>
+            Legal
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Your privacy is important to us. It is Long Sky Media's policy to
             respect your privacy and comply with any applicable law and
             regulation regarding any personal information we may collect about
@@ -42,10 +42,10 @@ export const PrivacyPage: FC = () => {
             you leave our app. This policy is effective as of 4 July 2022. Last
             updated: 4 July 2022
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             We Collect No Personal Information
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             We collect no information from you. We collect no information in
             either of these two categories: “voluntarily provided” information
             and “automatically collected” information. “Voluntarily provided”
@@ -55,17 +55,17 @@ export const PrivacyPage: FC = () => {
             automatically sent by your device in the course of accessing our app
             and its associated services.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Children’s Privacy</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Children’s Privacy</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             We do not aim any of our products or services directly at children
             under the age of 13, and we do not collect personal information
             about children under 13. (We do not collect personal information at
             all.)
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Your Rights and Controlling Your Personal Information
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             The app does not collect your personal information, and thus also
             does not hold, use, or disclose personal information. You do not
             provide personal information to us, and we receive no personal
@@ -94,8 +94,8 @@ export const PrivacyPage: FC = () => {
             method for receiving email updates, we will provide an unsubscribe
             link at the end of all such email messages.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Business Transfers</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Business Transfers</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             If we or our assets are acquired, or in the unlikely event that we
             go out of business or enter bankruptcy, any data among the assets
             would not include your personal information. You acknowledge that
@@ -105,17 +105,17 @@ export const PrivacyPage: FC = () => {
             as it is the basis for any ownership or use rights we have over such
             information.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Limits of Our Policy</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Limits of Our Policy</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Our app may link to external sites that are not operated by us.
             Please be aware that we have no control over the content and
             policies of those sites, and cannot accept responsibility or
             liability for their respective privacy practices.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Changes to This Policy
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             At our discretion, we may change our privacy policy to reflect
             updates to our business processes, current acceptable practices, or
             legislative or regulatory changes. If we decide to change this
@@ -124,14 +124,14 @@ export const PrivacyPage: FC = () => {
             opportunity to opt in to or opt out of, as applicable, any uses of
             your personal information.
           </p>
-          <p className="text-3xl font-sfpro-bold pb-6">
+          <p className="text-3xl font-sfpro-bold pb-6 text-midNight">
             Additional Disclosures for General Data Protection Regulation (GDPR)
             Compliance (EU)
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Data Controller / Data Processor
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             The GDPR distinguishes between organizations that process personal
             information for their own purposes (known as “data controllers”) and
             organizations that process personal information on behalf of other
@@ -140,10 +140,10 @@ export const PrivacyPage: FC = () => {
             Data Controller with respect to any personal information you might
             provide to us, if it were possible to do so.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Legal Bases for Processing Your Personal Information
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             We do not collect or use your personal information at all, but if we
             are ever in the future to collect and use personal information, we
             will do so only when we have a legal right to do so. In which case,
@@ -153,10 +153,10 @@ export const PrivacyPage: FC = () => {
             years of age, we will seek your parent or legal guardian’s consent
             to process your personal information for that specific purpose.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Your Rights and Controlling Your Personal Information
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Restrict: While we do not gather any personal information, it is
             still your right to request that we restrict the processing of your
             personal information if (i) you are concerned about the accuracy of
@@ -184,10 +184,10 @@ export const PrivacyPage: FC = () => {
             deleted the information from our services or deactivated your
             account.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Additional Disclosures for California Compliance (US)
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Under California Civil Code Section 1798.83, if you live in
             California and your business relationship with us is mainly for
             personal, family, or household purposes, you may ask us about the
@@ -202,18 +202,18 @@ export const PrivacyPage: FC = () => {
             addresses. Not all personal information shared in this way is
             covered by Section 1798.83 of the California Civil Code.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             California Notice of Collection
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             For more information on information we collect, including the
             sources we receive information from, review the “We Collect No
             Personal Information” section.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Right to Know and Delete
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             If you are a California resident, you have rights to delete any
             personal information we collected and know certain information about
             our data practices in the preceding 12 months. In particular, you
@@ -229,8 +229,8 @@ export const PrivacyPage: FC = () => {
             rights, please contact us using the details provided in this privacy
             policy.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Shine the Light</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Shine the Light</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             If you are a California resident, in addition to the rights
             discussed above, you have the right to request information from us
             regarding the manner (if at all) in which we share certain personal
@@ -242,8 +242,8 @@ export const PrivacyPage: FC = () => {
             description and include your name, street address, city, state, and
             ZIP code.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Contact Us</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Contact Us</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             For any questions or concerns regarding your privacy, you may
             contact us using the following details: OptiListen Support
           </p>
@@ -254,13 +254,13 @@ export const PrivacyPage: FC = () => {
             optilisten@longskymedia.com
           </a>
 
-          <p className="text-3xl font-sfpro-bold pb-6" ref={termsRef}>
+          <p className="text-3xl font-sfpro-bold pb-6 text-darkBlue" ref={termsRef}>
             Terms and Conditions
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Agreement between User and Long Sky Media
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Welcome to OptiListen, an application produced and operated by Long
             Sky Media ("Long Sky"). OptiListen is offered to you conditioned on
             your acceptance without modification of the terms, conditions, and
@@ -271,16 +271,16 @@ export const PrivacyPage: FC = () => {
             showing the percentage of time spent listening (not speaking) in an
             online audio conversation and comparing it to a goal target.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Privacy</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Privacy</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Your use of OptiListen is subject to Long Sky's Privacy Policy.
             Please review our Privacy Policy, which also governs this website
             and informs users of our data collection practices.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Electronic Communications
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Visiting{" "}
             <span className="underline text-blue-500">
               https://www.optilisten.com
@@ -291,19 +291,19 @@ export const PrivacyPage: FC = () => {
             we provide to you electronically, via email and on the Site, satisfy
             any legal requirement that such communications be in writing.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Children Under Thirteen
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Long Sky does not knowingly collect, either online or offline,
             personal information from persons under the age of thirteen. If you
             are under 18, you may use OptiListen only with permission of a
             parent or guardian.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Links to Third Party Sites/Third Party Services
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             OptiListen may contain links to other websites ("Linked Sites"). The
             Linked Sites are not under the control of Long Sky and Long Sky is
             not responsible for the contents of any Linked Site, including
@@ -313,10 +313,10 @@ export const PrivacyPage: FC = () => {
             does not imply endorsement by Long Sky of the site or any
             association with its operators.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             No Unlawful or Prohibited Use/Intellectual Property
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             You are granted a non-exclusive, non-transferable, revocable license
             to access and use OptiListen strictly in accordance with these terms
             of use. As a condition of your use of the app, you warrant to Long
@@ -349,8 +349,8 @@ export const PrivacyPage: FC = () => {
             Long Sky or our licensors except as expressly authorized by these
             Terms.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">International Users</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">International Users</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             The Service is controlled, operated and administered by Long Sky
             from our offices within the USA. If you access the Service from a
             location outside the USA, you are responsible for compliance with
@@ -358,8 +358,8 @@ export const PrivacyPage: FC = () => {
             country or in any manner prohibited by any applicable laws,
             restrictions or regulations.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Indemnification</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Indemnification</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             You agree to indemnify, defend and hold harmless Long Sky, its
             officers, directors, employees, agents and third parties, for any
             losses, costs, liabilities and expenses (including reasonable
@@ -372,8 +372,8 @@ export const PrivacyPage: FC = () => {
             otherwise subject to indemnification by you, in which event you will
             fully cooperate with Long Sky in asserting any available defenses.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Arbitration</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Arbitration</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             In the event the parties are not able to resolve any dispute between
             them arising out of or concerning these Terms and Conditions, or any
             provisions hereof, whether in contract, tort, or otherwise at law or
@@ -398,8 +398,8 @@ export const PrivacyPage: FC = () => {
             the Arbitrator. This arbitration provision shall survive the
             termination of these Terms and Conditions.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Liability Disclaimer</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Liability Disclaimer</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             THE INFORMATION, SOFTWARE, PRODUCTS, AND SERVICES INCLUDED IN OR
             AVAILABLE THROUGH THE SITE MAY INCLUDE INACCURACIES OR TYPOGRAPHICAL
             ERRORS. CHANGES ARE PERIODICALLY ADDED TO THE INFORMATION HEREIN.
@@ -434,10 +434,10 @@ export const PrivacyPage: FC = () => {
             PORTION OF THE SITE, OR WITH ANY OF THESE TERMS OF USE, YOUR SOLE
             AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">
             Termination/Access Restriction
           </p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Long Sky reserves the right, in its sole discretion, to terminate
             your access to the app and the related services or any portion
             thereof at any time, without notice. To the maximum extent permitted
@@ -474,8 +474,8 @@ export const PrivacyPage: FC = () => {
             form. It is the express wish to the parties that this agreement and
             all related documents be written in English.
           </p>
-          <p className="text-2xl font-sfpro-bold pb-6">Changes to Terms</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Changes to Terms</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Long Sky reserves the right, in its sole discretion, to change the
             Terms under which OptiListen is offered. The most current version of
             the Terms will supersede all previous versions. Long Sky encourages
@@ -483,18 +483,18 @@ export const PrivacyPage: FC = () => {
             updates.
           </p>
 
-          <p className="text-2xl font-sfpro-bold pb-6">Contact Us</p>
-          <p className="text-xl font-sfpro-medium pb-6">
+          <p className="text-2xl font-sfpro-bold pb-6 text-midNight">Contact Us</p>
+          <p className="text-xl font-sfpro-medium pb-6 text-midNight">
             Long Sky welcomes your questions or comments regarding the Terms:
           </p>
-          <p className="text-xl font-sfpro-medium">Email Address:</p>
+          <p className="text-xl font-sfpro-medium  text-midNight">Email Address:</p>
           <a
             className="text-xl font-sfpro-medium pb-6 text-blue-500 underline w-full"
             href="mailto:optilisten@longskymedia.com"
           >
             optilisten@longskymedia.com
           </a>
-          <p className="text-xl font-sfpro-medium pt-6">
+          <p className="text-xl font-sfpro-medium pt-6 text-midNight">
             Effective as of November 01, 2022
           </p>
         </Grid>

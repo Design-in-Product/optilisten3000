@@ -123,7 +123,7 @@ export const AboutAppPage: FC = () => {
           >
             Who We Are
           </p>
-          <p className="text-black font-sfpro-regular text-xl pb-6">
+          <p className="text-midNight font-sfpro-regular text-xl pb-6">
             Long Sky Media publishes books, makes apps, and tries to bring a wee
             bit of trout music to the world. OptiListen was created by Dan
             Brodnitz and Christian Crumlish, who also fancy themselves its first
@@ -148,12 +148,12 @@ export const AboutAppPage: FC = () => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <p className="text-black font-sfpro-regular text-xl">
+              <p className="text-midNight font-sfpro-regular text-xl">
                 Why did you all make this app?
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography className="text-midNight">
                 We were working on our own listening skills, and realized that
                 talk talk was going to break our spirits, so we created a
                 hands-free app that could let us focus less on the buttons and
@@ -168,12 +168,12 @@ export const AboutAppPage: FC = () => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <p className="text-black font-sfpro-regular text-xl">
+              <p className="text-midNight font-sfpro-regular text-xl">
                 Do I need to wear headphones for the app to work?
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography className="text-midNight">
                 Yes -- that way the app hears that you are talking but not the
                 other folks on the call.
               </Typography>
@@ -185,12 +185,12 @@ export const AboutAppPage: FC = () => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <p className="text-black font-sfpro-regular text-xl">
+              <p className="text-midNight font-sfpro-regular text-xl">
                 Does the app collect any personal data?
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography className="text-midNight">
                 It doesn't -- no login, no data. All data is kept on your phone.
               </Typography>
             </AccordionDetails>
@@ -201,12 +201,12 @@ export const AboutAppPage: FC = () => {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <p className="text-black font-sfpro-regular text-xl">
+              <p className="text-midNight font-sfpro-regular text-xl">
                 Are you all better listeners now?{" "}
               </p>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography className="text-midNight">
                 Better, hopefully. But it's a journey! :-) Be, hear, now, good
                 people!
               </Typography>

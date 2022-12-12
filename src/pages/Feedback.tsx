@@ -138,7 +138,13 @@ export const FeedbackPage: FC = () => {
         >
           <Grid item md={8} container>
             <FormControl>
-              <FormLabel id="demo-radio-buttons-group-label" className="mb-2">
+              <FormLabel
+                id="demo-radio-buttons-group-label"
+                className="mb-2 text-midNight"
+                sx={{
+                  color: "#0B1823"
+                }}
+              >
                 Type of Feedback
               </FormLabel>
               <RadioGroup
@@ -150,26 +156,31 @@ export const FeedbackPage: FC = () => {
                   value="loveIt"
                   control={<Radio />}
                   label="Love It!"
+                  className="text-midNight"
                 />
                 <FormControlLabel
                   value="bugReport"
                   control={<Radio />}
                   label="Bug Report"
+                  className="text-midNight"
                 />
                 <FormControlLabel
                   value="question"
                   control={<Radio />}
                   label="Question"
+                  className="text-midNight"
                 />
                 <FormControlLabel
                   value="feedback"
                   control={<Radio />}
                   label="Feedback"
+                  className="text-midNight"
                 />
                 <FormControlLabel
                   value="other"
                   control={<Radio />}
                   label="Other"
+                  className="text-midNight"
                 />
               </RadioGroup>
             </FormControl>
