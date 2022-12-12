@@ -1,15 +1,12 @@
-import { FC, useEffect, useRef } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { BaseLayout } from "./BaseLayout";
 
 import Fireworks from "../assets/images/Fireworks.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Facebook from "../assets/images/Facebook_light.png";
+import MinusIcon from "../assets/images/minus.png";
+import PlusIcon from "../assets/images/plus.png";
 import { Grid, Hidden } from "@mui/material";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useParams } from "react-router-dom";
 
 export const AboutAppPage: FC = () => {
@@ -18,6 +15,12 @@ export const AboutAppPage: FC = () => {
   const whoRef = useRef(null);
 
   const params = useParams();
+  const [menuOpen, setMenuOpen] = useState<boolean[]>([
+    false,
+    false,
+    false,
+    false,
+  ]);
 
   useEffect(() => {
     if (!params || !params.section) return;
@@ -70,7 +73,11 @@ export const AboutAppPage: FC = () => {
             <Grid item xs={12}>
               <div className="relative h-[270px]">
                 <div className="flex justify-center absolute left-0 top-0 z-10">
-                  <img src={Fireworks} alt="fireworks" className="w-full z-10" />
+                  <img
+                    src={Fireworks}
+                    alt="fireworks"
+                    className="w-full z-10"
+                  />
                 </div>
                 <div className="z-20 relative">
                   <p
@@ -143,76 +150,100 @@ export const AboutAppPage: FC = () => {
           >
             Questions you may have
           </p>
-          <Accordion sx={{ width: "100%" }} defaultExpanded={true}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <p className="text-midNight font-sfpro-regular text-xl">
+          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+            <div className="flex justify-between items-center pb-2">
+              <p className="text-midNight font-sfpro-medium text-xl">
                 Why did you all make this app?
               </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography className="text-midNight">
+              <img
+                src={menuOpen[0] ? MinusIcon : PlusIcon}
+                width={32}
+                alt="arrow"
+                onClick={() => {
+                  const newVal = [...menuOpen];
+                  newVal[0] = !menuOpen[0];
+                  setMenuOpen(newVal);
+                }}
+              />
+            </div>
+            {menuOpen[0] && (
+              <p className="text-midNight font-sfpro-regular text-xl">
                 We were working on our own listening skills, and realized that
                 talk talk was going to break our spirits, so we created a
                 hands-free app that could let us focus less on the buttons and
                 more on trying to be a little more present for the people on our
                 audio and video calls.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion sx={{ width: "100%" }}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <p className="text-midNight font-sfpro-regular text-xl">
+              </p>
+            )}
+          </div>
+          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+            <div className="flex justify-between items-center pb-2">
+              <p className="text-midNight font-sfpro-medium text-xl">
                 Do I need to wear headphones for the app to work?
               </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography className="text-midNight">
+              <img
+                src={menuOpen[1] ? MinusIcon : PlusIcon}
+                width={32}
+                alt="arrow"
+                onClick={() => {
+                  const newVal = [...menuOpen];
+                  newVal[1] = !menuOpen[1];
+                  setMenuOpen(newVal);
+                }}
+              />
+            </div>
+            {menuOpen[1] && (
+              <p className="text-midNight font-sfpro-regular text-xl">
                 Yes -- that way the app hears that you are talking but not the
                 other folks on the call.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion sx={{ width: "100%" }}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <p className="text-midNight font-sfpro-regular text-xl">
+              </p>
+            )}
+          </div>
+          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+            <div className="flex justify-between items-center pb-2">
+              <p className="text-midNight font-sfpro-medium text-xl">
                 Does the app collect any personal data?
               </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography className="text-midNight">
-                It doesn't -- no login, no data. All data is kept on your phone.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion sx={{ width: "100%" }}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
+              <img
+                src={menuOpen[2] ? MinusIcon : PlusIcon}
+                width={32}
+                alt="arrow"
+                onClick={() => {
+                  const newVal = [...menuOpen];
+                  newVal[2] = !menuOpen[2];
+                  setMenuOpen(newVal);
+                }}
+              />
+            </div>
+            {menuOpen[2] && (
               <p className="text-midNight font-sfpro-regular text-xl">
-                Are you all better listeners now?{" "}
+                It doesn't -- no login, no data. All data is kept on your phone.
               </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography className="text-midNight">
+            )}
+          </div>
+          <div className="border-[1px] border-white border-b-teal py-6 w-full">
+            <div className="flex justify-between items-center pb-2">
+              <p className="text-midNight font-sfpro-medium text-xl">
+                Are you all better listeners now?
+              </p>
+              <img
+                src={menuOpen[3] ? MinusIcon : PlusIcon}
+                width={32}
+                alt="arrow"
+                onClick={() => {
+                  const newVal = [...menuOpen];
+                  newVal[3] = !menuOpen[3];
+                  setMenuOpen(newVal);
+                }}
+              />
+            </div>
+            {menuOpen[3] && (
+              <p className="text-midNight font-sfpro-regular text-xl">
                 Better, hopefully. But it's a journey! :-) Be, hear, now, good
                 people!
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+              </p>
+            )}
+          </div>
         </Grid>
       </Grid>
     </BaseLayout>
