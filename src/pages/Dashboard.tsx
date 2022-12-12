@@ -10,7 +10,7 @@ export const DashboardPage: FC = () => {
       <Grid
         container
         justifyContent={"center"}
-        className="p-10 bg-gradient-to-b from-white to-lightBlue"
+        className="p-10 bg-gradient-to-b from-white via-white to-lightBlue"
       >
         <Grid item md={8} container>
           <Grid item md={6} sm={12} xs={12}>
@@ -29,7 +29,13 @@ export const DashboardPage: FC = () => {
                 <Button
                   variant="contained"
                   color="info"
-                  sx={{ borderRadius: 100, fontSize: 18, color: "white" }}
+                  className="bg-gradient-to-r from-[#78C693] to-[#34A0A4]"
+                  sx={{
+                    borderRadius: 100,
+                    fontSize: 18,
+                    color: "white",
+                    textTransform: "none",
+                  }}
                 >
                   Try The Free App
                 </Button>

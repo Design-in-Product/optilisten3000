@@ -15,7 +15,6 @@ import Fireworks from "../assets/images/HappyFireworks.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
 import Facebook from "../assets/images/facebook.png";
 import { Button, Grid, Hidden, TextField } from "@mui/material";
-import { Stack } from "@mui/system";
 
 export const FeedbackPage: FC = () => {
   const [email, setEmail] = useState<string>("");
@@ -193,26 +192,40 @@ export const FeedbackPage: FC = () => {
             </div>
           </Grid>
         </Grid>
-        <Grid container justifyContent={"center"} className="pb-20 pl-10">
+        <Grid container justifyContent={"center"} className="p-10 pb-20 pt-0">
           <Grid item md={8} container>
-            <Stack spacing={2} direction="row">
+            <div className="flex flex-nowrap w-full">
               <Button
                 variant="outlined"
                 color="info"
-                className="flex-1"
-                sx={{ borderRadius: 30 }}
+                sx={{
+                  borderRadius: 30,
+                  color: "#34A0A4",
+                  textTransform: "none",
+                  fontSize: 16,
+                  width: "100%",
+                  fontWeight: "bold",
+                }}
               >
                 Cancel
               </Button>
+              <div className="w-10" />
               <Button
                 variant="contained"
                 color="info"
-                className="flex-1"
-                sx={{ borderRadius: 30 }}
+                className="bg-gradient-to-r from-[#78C693] to-[#34A0A4]"
+                sx={{
+                  borderRadius: 30,
+                  color: "white",
+                  fontSize: 16,
+                  textTransform: "none",
+                  fontWeight: "bold",
+                  width: "100%",
+                }}
               >
                 Submit
               </Button>
-            </Stack>
+            </div>
           </Grid>
         </Grid>
       </div>
