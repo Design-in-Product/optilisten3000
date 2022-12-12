@@ -16,7 +16,7 @@ export const AboutAppPage: FC = () => {
 
   const params = useParams();
   const [menuOpen, setMenuOpen] = useState<boolean[]>([
-    false,
+    true,
     false,
     false,
     false,
