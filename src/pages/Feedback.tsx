@@ -13,7 +13,7 @@ import FormLabel from "@mui/material/FormLabel";
 
 import Fireworks from "../assets/images/HappyFireworks.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
-import Facebook from "../assets/images/facebook.png";
+import Facebook from "../assets/images/Facebook_light.png";
 import { Button, Grid, Hidden, TextField } from "@mui/material";
 
 export const FeedbackPage: FC = () => {

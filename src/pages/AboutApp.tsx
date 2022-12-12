@@ -3,7 +3,7 @@ import { BaseLayout } from "./BaseLayout";
 
 import Fireworks from "../assets/images/Fireworks.png";
 import LinkedIn from "../assets/images/LinkedIn.png";
-import Facebook from "../assets/images/facebook.png";
+import Facebook from "../assets/images/Facebook_light.png";
 import { Grid, Hidden } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";

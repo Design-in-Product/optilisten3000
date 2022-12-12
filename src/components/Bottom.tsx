@@ -3,7 +3,7 @@ import { FC } from "react";
 import Logo from "../assets/images/logo.png";
 import AppStore from "../assets/images/iosLight.png";
 import LinkedIn from "../assets/images/LinkedInDark.png";
-import Facebook from "../assets/images/facebook.png";
+import FacebookDark from "../assets/images/Facebook_dark.png";
 import { useNavigate } from "react-router-dom";
 import {
   PATH_ABOUT_APP_PREFIX,
@@ -40,7 +40,7 @@ export const Bottom: FC<Props> = () => {
               <div className="flex mt-4">
                 <a href="https://www.facebook.com/longskymedia/">
                   <img
-                    src={Facebook}
+                    src={FacebookDark}
                     alt="facebook"
                     width={40}
                     className="mr-4 fill-darkBlue cursor-pointer"
@@ -134,7 +134,7 @@ export const Bottom: FC<Props> = () => {
               <div className="flex mt-4">
                 <a href="https://www.facebook.com/longskymedia/">
                   <img
-                    src={Facebook}
+                    src={FacebookDark}
                     alt="Facebook"
                     width={40}
                     className="mr-4 fill-darkBlue cursor-pointer"
