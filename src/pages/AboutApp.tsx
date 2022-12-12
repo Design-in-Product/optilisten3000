@@ -142,7 +142,7 @@ export const AboutAppPage: FC = () => {
           >
             Questions you may have
           </p>
-          <Accordion sx={{ width: "100%" }}>
+          <Accordion sx={{ width: "100%" }} defaultExpanded={true}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
