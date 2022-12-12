@@ -70,7 +70,7 @@ export const AboutAppPage: FC = () => {
             <Grid item xs={12}>
               <div className="relative h-[270px]">
                 <div className="flex justify-center absolute left-0 top-0 z-10">
-                  <img src={Fireworks} alt="fireworks" className="w-3/4 z-10" />
+                  <img src={Fireworks} alt="fireworks" className="w-full z-10" />
                 </div>
                 <div className="z-20 relative">
                   <p
@@ -110,6 +110,7 @@ export const AboutAppPage: FC = () => {
           </Hidden>
         </Grid>
       </Grid>
+      <div className="w-full h-10  bg-darkBlue curve-radius mt-[-1px]" />
 
       <Grid
         container

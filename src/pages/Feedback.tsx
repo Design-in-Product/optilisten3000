@@ -49,7 +49,7 @@ export const FeedbackPage: FC = () => {
                     <img
                       src={Fireworks}
                       alt="fireworks"
-                      className="w-2/4 z-10"
+                      className="w-full z-10"
                     />
                   </div>
                   <div className="z-20 relative">
@@ -92,6 +92,7 @@ export const FeedbackPage: FC = () => {
             </Hidden>
           </Grid>
         </Grid>
+        <div className="w-full h-10  bg-darkBlue curve-radius" />
 
         <Grid
           container
@@ -142,7 +143,7 @@ export const FeedbackPage: FC = () => {
                 id="demo-radio-buttons-group-label"
                 className="mb-2 text-midNight"
                 sx={{
-                  color: "#0B1823"
+                  color: "#0B1823",
                 }}
               >
                 Type of Feedback

@@ -51,3 +51,8 @@ code {
   font-weight: bold;
   src: url("assets/fonts/sfpro/SFPRODISPLAYBOLD.OTF");
 }
+
+.curve-radius {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
