@@ -150,9 +150,9 @@ export const AboutAppPage: FC = () => {
           >
             Questions you may have
           </p>
-          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
+          <div className="border-0 border-b-2 border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
-              <p className="text-midNight font-sfpro-medium text-xl">
+              <p className="text-midNight font-sfpro-bold text-xl">
                 Why did you all make this app?
               </p>
               <img
@@ -177,9 +177,9 @@ export const AboutAppPage: FC = () => {
               </p>
             )}
           </div>
-          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
+          <div className="border-0 border-b-2 border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
-              <p className="text-midNight font-sfpro-medium text-xl">
+              <p className="text-midNight font-sfpro-bold text-xl">
                 Do I need to wear headphones for the app to work?
               </p>
               <img
@@ -201,9 +201,9 @@ export const AboutAppPage: FC = () => {
               </p>
             )}
           </div>
-          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
+          <div className="border-0 border-b-2 border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
-              <p className="text-midNight font-sfpro-medium text-xl">
+              <p className="text-midNight font-sfpro-bold text-xl">
                 Does the app collect any personal data?
               </p>
               <img
@@ -224,9 +224,9 @@ export const AboutAppPage: FC = () => {
               </p>
             )}
           </div>
-          <div className="border-0 border-b-[1px] border-b-teal py-6 w-full">
+          <div className="border-0 border-b-2 border-b-teal py-6 w-full">
             <div className="flex justify-between items-center pb-2">
-              <p className="text-midNight font-sfpro-medium text-xl">
+              <p className="text-midNight font-sfpro-bold text-xl">
                 Are you all better listeners now?
               </p>
               <img

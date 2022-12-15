@@ -144,6 +144,9 @@ export const FeedbackPage: FC = () => {
                 className="mb-2 text-midNight"
                 sx={{
                   color: "#0B1823",
+                  "&.MuiFormLabel-root": {
+                    letterSpacing: "0.025em",
+                  },
                 }}
               >
                 Type of Feedback
@@ -158,37 +161,66 @@ export const FeedbackPage: FC = () => {
                   control={<Radio />}
                   label="Love It!"
                   className="text-midNight"
+                  sx={{
+                    "& .MuiFormControlLabel-label": {
+                      letterSpacing: "0.025em",
+                    },
+                  }}
                 />
                 <FormControlLabel
                   value="bugReport"
                   control={<Radio />}
                   label="Bug Report"
                   className="text-midNight"
+                  sx={{
+                    "& .MuiFormControlLabel-label": {
+                      letterSpacing: "0.025em",
+                    },
+                  }}
                 />
                 <FormControlLabel
                   value="question"
                   control={<Radio />}
                   label="Question"
                   className="text-midNight"
+                  sx={{
+                    "& .MuiFormControlLabel-label": {
+                      letterSpacing: "0.025em",
+                    },
+                  }}
                 />
                 <FormControlLabel
                   value="feedback"
                   control={<Radio />}
                   label="Feedback"
                   className="text-midNight"
+                  sx={{
+                    "& .MuiFormControlLabel-label": {
+                      letterSpacing: "0.025em",
+                    },
+                  }}
                 />
                 <FormControlLabel
                   value="other"
                   control={<Radio />}
                   label="Other"
                   className="text-midNight"
+                  sx={{
+                    "& .MuiFormControlLabel-label": {
+                      letterSpacing: "0.025em",
+                    },
+                  }}
                 />
               </RadioGroup>
             </FormControl>
           </Grid>
         </Grid>
 
-        <Grid container justifyContent={"center"} className="pb-10 px-10  z-20 relative">
+        <Grid
+          container
+          justifyContent={"center"}
+          className="pb-10 px-10  z-20 relative"
+        >
           <Grid item md={8} container>
             <div className="w-full">
               <TextField
@@ -204,7 +236,11 @@ export const FeedbackPage: FC = () => {
             </div>
           </Grid>
         </Grid>
-        <Grid container justifyContent={"center"} className="p-10 pb-20 pt-0  z-20 relative">
+        <Grid
+          container
+          justifyContent={"center"}
+          className="p-10 pb-20 pt-0  z-20 relative"
+        >
           <Grid item md={8} container>
             <div className="flex flex-nowrap w-full">
               <Button
