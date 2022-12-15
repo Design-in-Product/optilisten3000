@@ -54,7 +54,7 @@ export const DashboardPage: FC = () => {
           </Grid>
         </Grid>
       </Grid>
-      <div className="w-full h-10  bg-lightBlue curve-radius mt-[-1px]" />
+      <div className="w-full h-10  bg-lightBlue curve-radius mt-[-1px] shadow-2xl" />
       <Grid container justifyContent={"center"} className="p-10">
         <Grid item md={8} container>
           <Grid xs={12} item>

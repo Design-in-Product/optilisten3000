@@ -17,7 +17,7 @@ interface Props {}
 export const Bottom: FC<Props> = () => {
   const navigate = useNavigate();
   return (
-    <div className="p-8">
+    <div className="p-8 shadow-2xl">
       <Grid container justifyContent={"center"}>
         <Hidden mdDown>
           <Grid item md={8} container rowSpacing={2}>
@@ -107,8 +107,7 @@ export const Bottom: FC<Props> = () => {
 
             <Grid item xs={12}>
               <p className="text-gray-300  font-sfpro-regular text-md">
-                © Copyright © 2022 Long Sky Media. All rights
-                reserved.
+                © Copyright © 2022 Long Sky Media. All rights reserved.
               </p>
             </Grid>
           </Grid>
@@ -201,8 +200,7 @@ export const Bottom: FC<Props> = () => {
 
             <Grid item xs={12}>
               <p className="text-gray-300  font-sfpro-regular text-md">
-                © Copyright © 2022 Long Sky Media. All rights
-                reserved.
+                © Copyright © 2022 Long Sky Media. All rights reserved.
               </p>
             </Grid>
           </Grid>

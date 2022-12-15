@@ -117,7 +117,7 @@ export const AboutAppPage: FC = () => {
           </Hidden>
         </Grid>
       </Grid>
-      <div className="w-full h-10  bg-darkBlue curve-radius mt-[-1px]" />
+      <div className="w-full h-10  bg-darkBlue curve-radius mt-[-1px] shadow-2xl" />
 
       <Grid
         container
