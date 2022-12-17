@@ -10,7 +10,7 @@ export const DashboardPage: FC = () => {
       <Grid
         container
         justifyContent={"center"}
-        className="p-10 bg-gradient-to-b from-white via-white to-lightBlue"
+        className="p-10 bg-gradient-to-b from-white via-white to-opacityBlue"
       >
         <Grid item md={8} container>
           <Grid item md={6} sm={12} xs={12}>
@@ -49,12 +49,12 @@ export const DashboardPage: FC = () => {
             <img
               src={Phones}
               alt="Phones"
-              className="m-[-90px] mt-24 mx-auto"
+              className="m-[-130px] mt-24 mx-auto"
             />
           </Grid>
         </Grid>
       </Grid>
-      <div className="w-full h-10  bg-lightBlue curve-radius mt-[-1px] shadow-2xl" />
+      <div className="w-full h-10  bg-opacityBlue curve-radius shadow-2xl" />
       <Grid container justifyContent={"center"} className="p-10">
         <Grid item md={8} container>
           <Grid xs={12} item>
