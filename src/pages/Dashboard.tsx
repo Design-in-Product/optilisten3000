@@ -35,6 +35,8 @@ export const DashboardPage: FC = () => {
                     fontSize: 18,
                     color: "white",
                     textTransform: "none",
+                    paddingLeft: 8,
+                    paddingRight: 8,
                   }}
                 >
                   Try The Free App
