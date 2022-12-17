@@ -92,7 +92,7 @@ export const FeedbackPage: FC = () => {
             </Hidden>
           </Grid>
         </Grid>
-        <div className="w-full h-10  bg-darkBlue curve-radius shadow-2xl" />
+        <div className="w-full h-4  bg-darkBlue curve-radius shadow-2xl" />
 
         <Grid
           container

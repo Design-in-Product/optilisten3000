@@ -51,16 +51,16 @@ export const DashboardPage: FC = () => {
             <img
               src={Phones}
               alt="Phones"
-              className="m-[-130px] mt-24 mx-auto"
+              className="m-[-110px] mt-24 mx-auto"
             />
           </Grid>
         </Grid>
       </Grid>
-      <div className="w-full h-10  bg-opacityBlue curve-radius shadow-2xl" />
-      <Grid container justifyContent={"center"} className="p-10">
+      <div className="w-full h-4  bg-opacityBlue curve-radius shadow-2xl" />
+      <Grid container justifyContent={"center"} className="p-10 my-24">
         <Grid item md={8} container>
-          <Grid xs={12} item>
-            <p className="text-midNight font-sfpro-regular text-xl mt-24 pt-14">
+          <Grid xs={12} item className="bg-white p-6 rounded-xl">
+            <p className="text-midNight font-sfpro-regular text-xl ">
               OptiListen is an easy to use app, created by and for folks who
               would like to listen a little more.
             </p>
@@ -70,7 +70,7 @@ export const DashboardPage: FC = () => {
               build your listening skills, one audio or video call at a time.
             </p>
 
-            <p className="text-midNight font-sfpro-regular text-xl mt-4 pb-12">
+            <p className="text-midNight font-sfpro-regular text-xl mt-4 ">
               Note: We're launching OptiListen as a free app and all data is
               kept locally on your phone.
             </p>
