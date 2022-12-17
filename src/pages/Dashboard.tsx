@@ -22,7 +22,7 @@ export const DashboardPage: FC = () => {
                     OptiListen
                   </h1>
                 </div>
-                <p className="font-sfpro-regular mb-10">
+                <p className="font-sfpro-regular mb-10 tracking-widest">
                   Listening Training In Your Pocket
                 </p>
 
@@ -39,7 +39,7 @@ export const DashboardPage: FC = () => {
                 >
                   Try The Free App
                 </Button>
-                <p className="font-sfpro-medium mt-2">
+                <p className="font-sfpro-medium mt-2 tracking-widest">
                   Unlock the listener within
                 </p>
               </div>
