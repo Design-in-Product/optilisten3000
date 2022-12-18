@@ -18,7 +18,7 @@ export const DashboardPage: FC = () => {
               <div className="text-center w-full">
                 <div className="flex items-center w-full justify-center">
                   <img src={Logo} alt="Logo" width={67} />
-                  <h1 className="pl-2 font-dosis-medium text-darkBlue text-3xl tracking-widest">
+                  <h1 className="pl-2 font-dosis-bold text-darkBlue text-2xl tracking-widest">
                     OptiListen
                   </h1>
                 </div>
